@@ -8,14 +8,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 #keeps the chrome open the detach mode else the service ends as soon .
-username='deathdater'
-passwordVal='Jugni@1234'
+username="" #Update IRCTCUSERNAME
+passwordVal="" #Update IRCTC PASSWORD
 source='kota jn'
 destination='ratlam jn'
 travel_date='17-03-2020'
 opts = ChromeOptions()
 opts.add_experimental_option("detach", True)
-driver = webdriver.Chrome(options=opts)
+driver = webdriver.Chrome(options=opts) #options=opts
 wait = WebDriverWait(driver,10)
 
 #
